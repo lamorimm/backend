@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const complaintSchema = new mongoose.Schema({
-    title: {
+    Nome: {
         type: String,
         required: true
     },
-    message: {
+    Descrição: {
         type: String,
         required: true
     },
@@ -16,3 +16,4 @@ const complaintSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Complaint', complaintSchema);
+
